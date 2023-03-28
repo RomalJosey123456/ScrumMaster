@@ -1,0 +1,16 @@
+
+<main class="border  mt-5 ms-3">
+    <h2 class="fw-bold  text-capitalize text-center" > Scrum Details</h2>
+    <div class="row">
+        <div class="col-4">
+        <div *ngFor="let one of personsList;let i =index"  class="d-flex  ">
+            <div class="border col-2 h-30 w-30  text-center " style="cursor:pointer" (click)="toShow(one.value)">{{one.value}}</div>
+        </div>
+    </div>
+    <div class="col-8">
+         <p *ngIf="filterArray && filterArray.length > 0 && filterArray[0]"> {{filterArray[0]?.id}}</p> 
+    </div>
+    </div>
+   
+    
+</main>

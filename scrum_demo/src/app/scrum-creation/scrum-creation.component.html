@@ -1,0 +1,26 @@
+
+
+
+<div  class="ms-5 me-3 col-6 mt-5">
+<div class="mb-3">
+    <label for="storyname" class="form-label">Story Name:</label>
+    <input type="text"  class="form-control" id="storyname" [(ngModel)]="name">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">Story Point:</label>
+    <select class="form-select"  [(ngModel)]="point">
+      
+        <option value="1">person 1</option>
+        <option value="2">person 2</option>
+        <option value="3">person 3</option>
+        <option value="4">person 4</option>
+        <option value="5">person 5</option>
+      </select>
+  </div>
+
+  
+  <button  class="btn btn-sm btn-primary"  (click)="toAdd()"  [disabled]="!point || !name">Add Story</button>
+   
+  
+</div>
+
